@@ -1,6 +1,6 @@
 ![ai-to-psd](images/cover.png)
 
-# Ai2Psd v4.0
+# Ai2Psd v4.1
 ![Downloads](https://img.shields.io/badge/Downloads-1.6k+-27CF7D.svg) [![Telegram](https://img.shields.io/badge/Telegram%20Channel-%40aiscripts-0088CC.svg)](https://t.me/aiscripts) [![Yotube](https://img.shields.io/badge/Youtube-%40SergOsokinArt-FF0000.svg)](https://www.youtube.com/c/SergOsokinArt/videos)
 
 ## Description
@@ -20,7 +20,7 @@ The Ai2Psd script may help to prepare vector layers for export from AI to PSD fi
 | Strokes | NO | Rasterized |
 | Filter Effects | NO | Clear |
 
-*P.S. Some layers in the PSD could get merged randomly...in Adobe CC 2023 there's still no reliable way to control it. We tried!*
+*P.S. Some layers in the PSD could get merged randomly...in Adobe Illustrator 2026 there's still no reliable way to control it. We tried!*
 
 > **Warning**   
 > You must have the Layers panel shown and expanded on the screen for the script to work properly.   
@@ -37,21 +37,7 @@ Ru: [Экспортируем векторные слои из AI в PSD](http:/
 #### System Requirements
 
 Should work with Adobe Illustrator CS6 and later.   
-The script has been tested on Illustrator CS6 (Windows 7), Illustrator CC 2017-2023 (Windows 10, Mac OS).
-
-## News 
-March 2023   
-**Version 4.0**: 
-
-* New UI with batch export
-* Minor improvements
-
-October 2020   
-**Version 3.0**: 
-
-* Algorithm issues fixed
-* Saving custom path names
-* Russian localization
+The script has been tested on Illustrator CS6 (Windows 7), Illustrator CC 2017-2026 (Windows 10, Mac OS).
 
 ## How to run script
 
@@ -62,6 +48,7 @@ October 2020
 	- OS X: `/Applications/Adobe Illustrator [vers.]/Presets.localized/en_GB/Scripts`
 	- Windows (32 bit): `C:\Program Files (x86)\Adobe\Adobe Illustrator [vers.]\Presets\en_GB\Scripts\`
 	- Windows (64 bit): `C:\Program Files\Adobe\Adobe Illustrator [vers.] (64 Bit)\Presets\en_GB\Scripts\`
+	- RU lang: `C:\Program Files\Adobe\Adobe Illustrator [версия]\Стили\ru_RU\Сценарии\`
 3. Restart Illustrator
 
 [Download archive]: https://github.com/creold/ai-to-psd/archive/master.zip
@@ -69,15 +56,25 @@ October 2020
 #### Variant 2 — Drag & Drop
 Drag and drop the script file (JS or JSX) onto the tabs of Illustrator documents. If you drag it to the area of the open document, the script may not work correctly (Adobe bug).  
 
-![drag](https://i.ibb.co/WP9S7Lh/drag-n-drop-area.jpg)
+![Drag-n-drop to AI](https://i.ibb.co/WP9S7Lh/drag-n-drop-area.jpg)
 
-#### Variant 3 — Use extension
-I recommend the [Scripshon Trees] panel. In it you can specify which folder your script files are stored in.
+#### Variant 3 — Use extensions
+I recommend the [Scripshon Trees] or [LAScripts] panel. In it you can specify which folder your script files are stored in.
 
 [Scripshon Trees]: https://exchange.adobe.com/creativecloud.details.15873.scripshon-trees.html
+[LAScripts]: https://ladyginpro.ru/products/lascripts/
 
-> **Warning**   
-> To run scripts via the F1-F15 hotkeys, users add them to the Actions panel. Don't add Ai2Psd to the Action, it will cause Illustrator to freeze.
+#### Variant 4 — Utilities
+You can use them to create macros to run scripts with hotkeys.
+
+1. [SPAi](https://tama-san.com/spai/) (Mac OS, free)
+2. [Hammerspoon](https://www.hammerspoon.org/) (Mac OS, free)
+3. [Keyboard Maestro](https://www.keyboardmaestro.com/main/) (Mac OS, paid)
+4. [BetterTouchTool](https://folivora.ai/) (Mac OS, paid)
+5. [AutoHotkey](https://www.autohotkey.com/) (Windows, free)
+
+> [!WARNING]   
+> To run scripts via the F1-F15 hotkeys, users add them to the Actions panel. If another action is running inside the script, Illustrator will freeze. How do you check it? Open the script in a text editor, if you find `app.doScript()` in the code, it is using an action. This is in all versions from CS6 to CC 2025 on Mac and Windows.
 
 ## How to use Ai2Psd
 1. Open document(s) in Adobe Illustrator or go next step
@@ -125,16 +122,25 @@ If you have a large group of small objects, e.g. hair brush draws, fur or outlin
 * Michael Helmrich: "This is really powerful! Thank you for sharing"
 
 ## Donate
-You can support my work on new scripts via [Buymeacoffee], [Tinkoff], [ЮMoney], [Donatty], [DonatePay].   
+Many scripts are free to download thanks to user support. Help me to develop new scripts and update existing ones by supporting my work with any amount via [Buymeacoffee] `USD`, [CloudTips] `RUB`, [ЮMoney] `RUB`, [Tinkoff] `RUB`, [Donatty] `RUB`, [DonatePay] `RUB`. Thank you.
 
-[Buymeacoffee]: https://www.buymeacoffee.com/osokin
-[Tinkoff]: https://www.tinkoff.ru/rm/osokin.sergey127/SN67U9405/
+[Buymeacoffee]: https://www.buymeacoffee.com/aiscripts
 [ЮMoney]: https://yoomoney.ru/to/410011149615582
+[CloudTips]: https://pay.cloudtips.ru/p/b81d370e
+[Tinkoff]: https://www.tinkoff.ru/rm/osokin.sergey127/SN67U9405
 [Donatty]: https://donatty.com/sergosokin
 [DonatePay]: https://new.donatepay.ru/@osokin
 
-<a href="https://www.buymeacoffee.com/osokin">
+<a href="https://www.buymeacoffee.com/aiscripts">
   <img width="111" height="40" src="https://i.ibb.co/0ssTJQ1/bmc-badge.png">
+</a>
+
+<a href="https://pay.cloudtips.ru/p/b81d370e">
+  <img width="111" height="40" src="https://i.ibb.co/qLznXkNG/cloudtips-badge.png">
+</a>
+
+<a href="https://www.tinkoff.ru/rm/osokin.sergey127/SN67U9405">
+  <img width="111" height="40" src="https://i.ibb.co/hRsbYnM/tinkoff-badge.png">
 </a>
 
 <a href="https://yoomoney.ru/to/410011149615582">
@@ -153,6 +159,7 @@ You can support my work on new scripts via [Buymeacoffee], [Tinkoff], [ЮMoney],
 ## Changelog 
 | Version | Notes |
 | --- | --- |
+| **v4.1** | Fixed Adobe Illustrator issues. Minor improvements. |
 | **v4.0** | Added UI with batch export. Minor improvements. |
 | **v3.0** | Algorithm issues fixed. Added: Saving custom path names, Russian localization. |
 | **v2.3** | Minor issues fixed. |
@@ -177,5 +184,5 @@ Radmir Kashaev: [GitHub](https://github.com/rkashaev)
 
 ### License
 
-Ai-to-Psd is licensed under the MIT licence.  
+Ai2Psd is licensed under the MIT licence.  
 See the included LICENSE file for more details.
